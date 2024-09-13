@@ -5,8 +5,9 @@ let btn=document.querySelector("#button")
 btn.addEventListener("click",fullurl)
 let url=document.querySelector("#url")
 
-function fullurl() {
-	let baseurl="https://localhost:8080/";
+function fullurl(event) {
+	event.preventDefault()
+	let baseurl="https://localhost:8080";
 	if(namefield.value && yearfield.value){
 	 url.innerText=baseurl +"?"+namefield.id+"="+namefield.value+"&"+yearfield.id+"="+yearfield.value
 	}
