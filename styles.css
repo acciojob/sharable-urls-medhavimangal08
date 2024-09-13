@@ -1,1 +1,5 @@
-
+fo{
+	display: flex;
+    flex-direction: column; /* Stack elements vertically */
+	width: 50px
+}
