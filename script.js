@@ -7,7 +7,7 @@ let url=document.querySelector("#url")
 
 function fullurl(event) {
     event.preventDefault();
-    let baseurl="https://localhost:8080";
+    let baseurl="https://localhost:8080/";
     if(namefield.value && yearfield.value){
         url.innerText=baseurl +"?"+namefield.id+"="+namefield.value+"&"+yearfield.id+"="+yearfield.value;
     }
